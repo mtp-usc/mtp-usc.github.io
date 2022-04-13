@@ -1,15 +1,21 @@
+import { Logo } from '../Logo'
+const LogoSize = 100
 export const Header = () => {
   return (
-    <div>
-      <h1>Massive Blood Transfusion Prediction in Trauma Patients</h1>
+    <div className='header'>
+
+      <div className='header-title'>
+        <h1>Massive Blood Transfusion Prediction in Trauma Patients</h1>
+        <Logo className='logo' width={LogoSize} height={LogoSize} />
+      </div>
       <h2>Usability Surveys</h2>
       <p>
-        1. Please complete the {}
+        <strong>1.</strong>  Please complete the {}
         <a href='https://docs.google.com/forms/d/e/1FAIpQLSf4OFb47nXxH-alEAhS0pK9W9RJlwJDZV_XxmgpoINMGxPFSA/viewform'>Systems Usability Surver</a> {}
         after testing the app.
       </p>
       <p>
-        2. Please complete the {}
+        <strong>2.</strong> Please complete the {}
         <a href='https://docs.google.com/forms/d/e/1FAIpQLSf4OFb47nXxH-alEAhS0pK9W9RJlwJDZV_XxmgpoINMGxPFSA/viewform'>Usefulness, Satisfaction, and Ease of Use questionnaire</a> {}
         after testing the app.
       </p>
