@@ -80,7 +80,7 @@ export const Model5 = () => {
         <CustomInput
           defaultValue={120}
           description='(Beats per minute)'
-          inputNumber='(6/6)'
+          inputNumber='(4/6)'
           inputType='slide'
           name='HR'
           range={[1, 200]}
@@ -96,7 +96,7 @@ export const Model5 = () => {
 
         <CustomInput
           defaultValue='No'
-          inputNumber='(11/6)'
+          inputNumber='(5/6)'
           inputType='options'
           name='BLR'
           options={['Yes', 'No']}
@@ -113,7 +113,7 @@ export const Model5 = () => {
 
         <CustomInput
           defaultValue='Not Testable +0'
-          inputNumber='(14/6)'
+          inputNumber='(6/6)'
           inputType='options'
           name='GCSMR'
           options={[

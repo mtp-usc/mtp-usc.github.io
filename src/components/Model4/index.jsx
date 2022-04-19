@@ -33,7 +33,7 @@ export const Model4 = () => {
       <div className='model-input-zone'>
         <CustomInput
           defaultValue={25}
-          inputNumber='(1/9)'
+          inputNumber='(1/10)'
           inputType='slide'
           name='AGE'
           range={[16, 100]}
@@ -45,7 +45,7 @@ export const Model4 = () => {
         <CustomInput
           defaultValue={120}
           description='(mm Hg)'
-          inputNumber='(2/9)'
+          inputNumber='(2/10)'
           inputType='slide'
           name='SBP'
           range={[1, 200]}
@@ -57,7 +57,7 @@ export const Model4 = () => {
         <CustomInput
           defaultValue={12}
           description='(O2%)'
-          inputNumber='(3/9)'
+          inputNumber='(3/10)'
           inputType='slide'
           name='O2'
           range={[1, 100]}
@@ -69,7 +69,7 @@ export const Model4 = () => {
         <CustomInput
           defaultValue={120}
           description='(Beats per minute)'
-          inputNumber='(4/9)'
+          inputNumber='(4/10)'
           inputType='slide'
           name='HR'
           range={[1, 200]}
@@ -85,7 +85,7 @@ export const Model4 = () => {
 
         <CustomInput
           defaultValue='Not Performed'
-          inputNumber='(5/9)'
+          inputNumber='(5/10)'
           inputType='options'
           name='PR'
           options={['Not Performed', 'Positive', 'Negative']}
@@ -96,7 +96,7 @@ export const Model4 = () => {
 
         <CustomInput
           defaultValue='No'
-          inputNumber='(6/9)'
+          inputNumber='(6/10)'
           inputType='options'
           name='SPF'
           options={['Yes', 'No']}
@@ -107,7 +107,7 @@ export const Model4 = () => {
 
         <CustomInput
           defaultValue='Negative'
-          inputNumber='(7/9)'
+          inputNumber='(7/10)'
           inputType='checkbox'
           name='FAST'
           options={[
@@ -121,7 +121,7 @@ export const Model4 = () => {
 
         <CustomInput
           defaultValue='No'
-          inputNumber='(8/9)'
+          inputNumber='(8/10)'
           inputType='options'
           name='PNR'
           options={['Yes', 'No']}
@@ -132,7 +132,7 @@ export const Model4 = () => {
 
         <CustomInput
           defaultValue='No'
-          inputNumber='(9/9)'
+          inputNumber='(9/10)'
           inputType='options'
           name='BLR'
           options={['Yes', 'No']}
@@ -149,7 +149,7 @@ export const Model4 = () => {
 
         <CustomInput
           defaultValue='Not Testable/Intubated +0'
-          inputNumber='(13/9)'
+          inputNumber='(10/10)'
           inputType='options'
           name='GCSVR'
           options={[

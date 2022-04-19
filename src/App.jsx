@@ -10,7 +10,7 @@ function App () {
   return (
     <>
       <Header />
-      <TopInfo model={model} top={top} setTop={setTop} />
+      {model !== 'overview' && <TopInfo model={model} top={top} setTop={setTop} />}
       <Model model={model} setModel={setModel} />
     </>
   )

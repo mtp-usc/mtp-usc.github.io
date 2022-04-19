@@ -191,7 +191,7 @@ code {
 
 .div-overview p{
   text-align: justify;
-  margin: 15px 0
+  margin: 15px 0 0 0 
 }
 
 
@@ -206,7 +206,7 @@ code {
   grid-template-columns: 1fr 5fr;
   justify-content: center;
   width:100%;
-  margin: 15px 0 
+  margin: 15px 0 0 0
 }
 
 .div-table__left {

@@ -6,24 +6,24 @@ const modelInfo = {
     threshold: 0.0667
   },
   model1: {
-    variables: 9,
-    threshold: 0.0667
+    variables: 14,
+    threshold: 0.079
   },
   model2: {
-    variables: 9,
-    threshold: 0.0667
+    variables: 14,
+    threshold: 0.065
   },
   model3: {
-    variables: 9,
-    threshold: 0.0667
+    variables: 10,
+    threshold: 0.067
   },
   model4: {
-    variables: 9,
-    threshold: 0.0667
+    variables: 10,
+    threshold: 0.063
   },
   model5: {
-    variables: 9,
-    threshold: 0.0667
+    variables: 6,
+    threshold: 0.073
   }
 }
 
