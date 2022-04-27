@@ -77,7 +77,8 @@ ul {
 }
 
 .header p {
-  text-align: left;
+
+  text-align: justify;
   margin: 15px
 }
 
@@ -159,7 +160,7 @@ code {
   display: grid;
   grid-template-columns: repeat(1,1fr);
   grid-gap: 40px 70px;
-  margin: 50px 0
+  margin: 50px 0 30px 0
 }
 
 .model {
@@ -237,5 +238,16 @@ code {
 
 .div-table .bottom {
   border-bottom: solid 1px rgb(131, 131, 131);
+}
+
+.feedback { 
+  text-align: justify;
+  margin: 0 0 30px 0;
+}
+
+.feedback a {
+  text-decoration: none;
+  color: #17a2b8;
+  font-weight: bold;
 }
 

@@ -194,9 +194,16 @@ export const ModelOverview = () => {
           </div>
         </div>
         <i style={{
-          fontSize: 12,
-          marginBottom: 15,
+          fontSize: 9,
+          marginBottom: 5,
           marginTop: 5
+        }}
+        >*There were used 1949 observations to train the models and 489 observations to validate them.
+        </i>
+        <i style={{
+          fontSize: 9,
+          marginBottom: 15,
+          marginTop: 0
         }}
         >*Bold values are referred to the best value for each metric.
         </i>

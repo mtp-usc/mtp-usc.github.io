@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@emotion/react'
 import { MenuItem, Select } from '@mui/material'
 import { theme } from '../../utils/theme'
+import { CommentsSurvey } from '../CommentsSurvey'
 import { Model1 } from '../Model1'
 import { Model2 } from '../Model2'
 import { Model3 } from '../Model3'
@@ -45,6 +46,7 @@ export const Model = ({ model, setModel }) => {
         {model === 'model3' && <Model3 />}
         {model === 'model4' && <Model4 />}
         {model === 'model5' && <Model5 />}
+        {model !== 'overview' && <CommentsSurvey />}
 
       </ThemeProvider>
     </div>
