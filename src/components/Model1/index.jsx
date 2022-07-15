@@ -257,11 +257,11 @@ export const Model1 = () => {
       <div className='div-results'>
         {
           showResults && !resultSerialNumber &&
-          <p class="submit-error">An error occured when submitting prediction results. Please retry in a few minutes.</p>
+          <p className="submit-error">An error occured when submitting prediction results. Please retry in a few minutes.</p>
         }
         {
           showResults  && resultSerialNumber &&
-            <p class="submit-success">Record this Serial Number <strong>{resultSerialNumber}</strong> to link patient data to prediction result.</p>
+            <p className="submit-success">Record this Serial Number <strong>{resultSerialNumber}</strong> to link patient data to prediction result.</p>
         }
         <h1>Prediction</h1>
         {
