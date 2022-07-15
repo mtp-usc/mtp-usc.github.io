@@ -251,3 +251,12 @@ code {
   font-weight: bold;
 }
 
+.submit-error {
+  padding: 10px;
+  background-color: rgb(255,192,203);
+}
+
+.submit-success {
+  padding: 10px;
+  background-color: rgb(175,238,238)
+}
