@@ -9,10 +9,14 @@ import { CustomInput } from '../CustomInput'
 import {
   initialState,
   usePredictionModel,
-  submitData,
 } from '../../utils/model1'
 
+import {
+  submitData,
+} from '../../utils/submit'
+
 export const Model1 = () => {
+  const modelNum = 1
   const [state, setState] = useState(initialState)
   const [isMTP, setIsMTP] = useState({})
   const [showResults, setShowResults] = useState(false)
@@ -22,8 +26,7 @@ export const Model1 = () => {
   recalculatePrediction({ state, setIsMTP })
 
   const onPredict = () => {
-    setShowResults(true)
-    submitData({state, isMTP, setResultSerialNumber})
+    submitData({state, isMTP, setShowResults, setResultSerialNumber, modelNum})
   }
 
   const onReset = () => {
@@ -261,7 +264,7 @@ export const Model1 = () => {
         }
         {
           showResults  && resultSerialNumber &&
-            <p className="submit-success">Record this Serial Number <strong>{resultSerialNumber}</strong> to link patient data to prediction result.</p>
+            <p className="submit-success">Record Serial Number <strong>{resultSerialNumber}</strong> to link patient data to prediction result.</p>
         }
         <h1>Prediction</h1>
         {

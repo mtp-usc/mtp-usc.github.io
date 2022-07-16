@@ -14,16 +14,22 @@ import {
   usePredictionModel
 } from '../../utils/model2'
 
+import {
+  submitData,
+} from '../../utils/submit'
+
 export const Model2 = () => {
+  const modelNum = 2
   const [state, setState] = useState(initialState)
   const [isMTP, setIsMTP] = useState({})
   const [showResults, setShowResults] = useState(false)
+  const [resultSerialNumber, setResultSerialNumber] = useState()
   const recalculatePrediction = usePredictionModel()
 
   recalculatePrediction({ state, setIsMTP })
 
   const onPredict = () => {
-    setShowResults(true)
+    submitData({state, isMTP, setShowResults, setResultSerialNumber, modelNum})
   }
 
   const onReset = () => {
@@ -270,6 +276,14 @@ export const Model2 = () => {
       </div>
 
       <div className='div-results'>
+        {
+          showResults && !resultSerialNumber &&
+          <p className="submit-error">An error occured when submitting prediction results. Please retry in a few minutes.</p>
+        }
+        {
+          showResults  && resultSerialNumber &&
+            <p className="submit-success">Record Serial Number <strong>{resultSerialNumber}</strong> to link patient data to prediction result.</p>
+        }
         <h1>Prediction</h1>
         {
           showResults &&

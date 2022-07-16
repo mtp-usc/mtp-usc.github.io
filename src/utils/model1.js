@@ -41,8 +41,6 @@ export const coef = {
 
 const THRESHOLD = 0.079345094
 
-const scriptUrl = "https://script.google.com/macros/s/AKfycbxA6nQ1qegL-3iBwI0Q0G-gPkR59YbRgYhUvUSpruVT2RMeSSwnUwXiET9VZGhHJ61MHQ/exec"
-
 const predictionModel = ({ state, setIsMTP }) => {
   const tempState = { ...state }
   tempState.INTERCEPT = 1
@@ -164,21 +162,4 @@ export const usePredictionModel = () => {
     }, [state])
   }
   return recalculatePrediction
-}
-
-export const submitData = ({ state, isMTP, setResultSerialNumber }) => {
-  // Send a POST request to App Script.
-  let requestBody = {
-    ...state
-  }
-  requestBody['model'] = isMTP.model.prediction
-  requestBody['SI'] = isMTP.SI.prediction
-  requestBody['ABC'] = isMTP.ABC.prediction
-
-  fetch(scriptUrl, {method: 'POST', body: requestBody})
-  .then(res => {
-      console.log(res)
-      setResultSerialNumber(res.serialNumber)
-  })
-  .catch(err => console.log(err))
 }
