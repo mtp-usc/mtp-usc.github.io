@@ -7,9 +7,18 @@ export const submitData = ({ state, isMTP, setShowResults, setResultSerialNumber
     let requestBody = {
       ...state
     }
-    requestBody['model'] = isMTP.model ? isMTP.model.prediction : undefined
-    requestBody['SI'] = isMTP.SI ? isMTP.SI.prediction : undefined
-    requestBody['ABC'] = isMTP.ABC ? isMTP.ABC.prediction : undefined
+    if (isMTP.model) {
+        requestBody['model'] = isMTP.model.prediction
+        requestBody['model_label'] = isMTP.model ? isMTP.model.label : undefined
+    }
+    if (isMTP.SI) {
+        requestBody['SI'] = isMTP.SI.prediction
+        requestBody['SI_label'] = isMTP.SI.label
+    }
+    if (isMTP.ABC) {
+        requestBody['ABC'] = isMTP.ABC.prediction
+        requestBody['ABC_label'] = isMTP.ABC.label
+    }
     requestBody['modelNum'] = modelNum
   
     fetch(scriptUrl, {
